@@ -40,6 +40,19 @@ Model performance was evaluated using classification metrics such as:
 - F1-score
 - ROC-AUC
 
+## Model Performance
+
+Four machine learning approaches were evaluated using cross-validation: Logistic Regression, Random Forest, XGBoost, and a Stacking Ensemble.
+
+| Model | Recall | F1-Score | ROC-AUC | PR-AUC |
+|---|---:|---:|---:|---:|
+| Logistic Regression | 0.5431 | 0.5923 | 0.8462 | 0.6617 |
+| Random Forest | 0.4796 | 0.5429 | 0.8204 | 0.6134 |
+| XGBoost | 0.5197 | 0.5796 | 0.8438 | 0.6618 |
+| Stacking Ensemble | 0.5231 | 0.5877 | **0.8478** | **0.6672** |
+
+The Stacking Ensemble achieved the highest mean ROC-AUC (0.8478) and PR-AUC (0.6672), while Logistic Regression achieved the highest mean recall (0.5431).
+
 ## Key Business Purpose
 
 The project goes beyond simply predicting churn. The analysis aims to help identify customers with higher churn risk and understand the characteristics associated with customer attrition.
